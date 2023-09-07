@@ -5,29 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e559bacf-8594-46ba-9b29-7f512cfd6806" name="Changes" comment="Fist Version">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Auditorium.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/BaseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Feature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Language.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/PaymentProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/PaymentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/PaymentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Seat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/SeatType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Show.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/ShowSeat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/ShowSeatType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Theatre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/TicketStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/ShowSeatStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6bd48ee2-a3c0-42f5-b5ae-803c9f78908b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6bd48ee2-a3c0-42f5-b5ae-803c9f78908b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/BookmyshowApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/BookmyshowApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Auditorium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Auditorium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/BaseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/BaseModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Seat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/SeatType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/SeatType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/ShowSeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/ShowSeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/ShowSeatType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/ShowSeatType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Theatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Theatre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scalar/bookmyshow/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Auditorium.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Auditorium.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/BaseModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/BaseModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Language.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Payment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Seat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/SeatType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/SeatType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Show.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Show.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/ShowSeat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/ShowSeat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/ShowSeatType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/ShowSeatType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Theatre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Theatre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scalar/bookmyshow/models/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +56,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -69,29 +80,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="BookmyshowApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="bookmyshow" />
@@ -110,6 +121,9 @@
       <option name="presentableId" value="Default" />
       <updated>1691081362988</updated>
       <workItem from="1691081364865" duration="4203000" />
+      <workItem from="1694072775401" duration="11000" />
+      <workItem from="1694072790519" duration="11000" />
+      <workItem from="1694072810276" duration="223000" />
     </task>
     <task id="LOCAL-00001" summary="Fist Version">
       <created>1691081933848</created>
