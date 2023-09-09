@@ -1,22 +1,22 @@
 package com.scalar.bookmyshow.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
+
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Date;
-import java.util.List;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "shows")
 public class Show extends BaseModel{
-    @OneToOne
+    @ManyToOne
     private Auditorium auditorium;
     private Date startTime;
     private Date endTime;
+    @ManyToOne
     private Movie movie;
+    @Enumerated(EnumType.ORDINAL)
     private Language language;
 }

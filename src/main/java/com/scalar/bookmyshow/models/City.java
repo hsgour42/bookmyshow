@@ -1,5 +1,6 @@
 package com.scalar.bookmyshow.models;
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import lombok.Getter;
@@ -11,7 +12,8 @@ import java.util.List;
 @Setter
 @Entity
 public class City extends BaseModel{
-    @OneToMany
+
+    @OneToMany(mappedBy = "city") //name of the attribute in the other class that is rep. the relation
     private List<Theatre> theatres;
     private String name;
 }
