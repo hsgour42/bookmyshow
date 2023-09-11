@@ -12,4 +12,6 @@ public class BookTicketResponseDto {
     private Long ticketId;
     private List<String> seatNumbers;
     private String auditoriumName;
+    private String status;
+    private String message;
 }

@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 
+import java.util.concurrent.TimeoutException;
+
 @Controller
 public class TicketController {
     private TicketService ticketService;
@@ -15,6 +17,13 @@ public class TicketController {
         this.ticketService =  ticketService;
     }
     public BookTicketResponseDto bookTicket(BookTicketRequestDto request){
-        return null;
+        BookTicketResponseDto response = new BookTicketResponseDto();
+//        try{
+//           // ticketService.bookTicket(request.getSeatIds(),request.getShowId(),request.getUserId());
+//        }catch (TimeoutException e){
+//            response.setStatus("FAILURE");
+//            response.setMessage("Something is wrong");
+//        }
+        return response;
     }
 }

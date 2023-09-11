@@ -38,7 +38,7 @@ public class TicketService {
 
     //If not able to take lock in 2 sec roll back (Timeout)
     // Transaction cannot be run in private method
-    @Transactional(isolation = Isolation.SERIALIZABLE , timeout = 2)
+
     public Ticket bookTicket(List<Long> seatIds ,Long showId ,Long userId) throws InvalidArgumentException, SeatNotAvailableException {
         //1. For these seatIds get the corresponding show seat object for seat : getSeatsForIds(seatIs)
         //2. Check the status of all the show seats : getShowSeatsForSeats(seats)
@@ -59,9 +59,30 @@ public class TicketService {
             );
         }
 
+        List<ShowSeat> showSeats =  getAndLockShowSeat(seats, showOptional);
+
+        Optional<User> optionalUser = userRepository.findById(userId);
+        if(optionalUser.isEmpty()){
+            throw new InvalidArgumentException("User with id: " + userId + " doesn't exist.");
+        }
+
+        Ticket ticket = new Ticket();
+        ticket.setBookedBy(optionalUser.get());
+        ticket.setTicketStatus(TicketStatus.PROCESSING);
+        ticket.setShow(showOptional.get());
+        ticket.setSeats(seats);
+        ticket.setTimeOfBooking(new Date());
+        ticket.setAmount(0);
+        Ticket savedTicket = ticketRepository.save(ticket);
+        return savedTicket;
+    }
+
+    @Transactional(isolation = Isolation.SERIALIZABLE)
+    public List<ShowSeat> getAndLockShowSeat(List<Seat> seats, Optional<Show> showOptional) throws SeatNotAvailableException {
         //getShowSeatsForSeats(seats)
         //Lock will be taken here
-        List<ShowSeat> showSeats = showSeatRepository.findAllBySeatInAndShow(seats,showOptional.get());
+        //Lock is done in db level // @Lock(LockModeType.PESSIMISTIC_WRITE) -> inside repository
+        List<ShowSeat> showSeats = showSeatRepository.findAllBySeatInAndShow(seats, showOptional.get());
 
         //Check all seats
         for(ShowSeat showSeat : showSeats){
@@ -79,20 +100,7 @@ public class TicketService {
             savedShowSeat.add(showSeatRepository.save(showSeat));
         }
 
-        Optional<User> optionalUser = userRepository.findById(userId);
-        if(optionalUser.isEmpty()){
-            throw new InvalidArgumentException("User with id: " + userId + " doesn't exist.");
-        }
-
-        Ticket ticket = new Ticket();
-        ticket.setBookedBy(optionalUser.get());
-        ticket.setTicketStatus(TicketStatus.PROCESSING);
-        ticket.setShow(showOptional.get());
-        ticket.setSeats(seats);
-        ticket.setTimeOfBooking(new Date());
-        ticket.setAmount(0);
-        Ticket savedTicket = ticketRepository.save(ticket);
-        return savedTicket;
+        return savedShowSeat;
     }
     //Lock is released
 }
