@@ -11,7 +11,7 @@ import java.util.Date;
 
 @Getter
 @Setter
-@EntityListeners({AuditingEntityListener.class})  //class that has something to audit
+@EntityListeners({AuditingEntityListener.class})  //class that has something to audit or have audit column like lastModifyDaye
 @MappedSuperclass //Don't  create separate table for this instead put its attributes in every child class
 public class BaseModel {
     @Id

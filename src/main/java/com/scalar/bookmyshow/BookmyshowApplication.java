@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
-@EnableJpaAuditing //put all default value in table
+@EnableJpaAuditing //put all default value in table Or put the audit column default value like lastModifyDate..
 public class BookmyshowApplication implements CommandLineRunner {
     private UserController userController;
 
